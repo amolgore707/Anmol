@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="methods" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" parallel="methods" name="Test(failed)">
+    <classes>
+      <class name="practise.OrangeHRMChrome">
+        <methods>
+          <include name="setUp"/>
+          <include name="validateHomePagelogo"/>
+          <include name="tearDown"/>
+          <include name="validateUserIsOnPIMPage"/>
+        </methods>
+      </class> <!-- practise.OrangeHRMChrome -->
+      <class name="practise.OrangeHRMEdge">
+        <methods>
+          <include name="validateUserIsOnPIMPage"/>
+          <include name="validateHomePagelogo"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- practise.OrangeHRMEdge -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
